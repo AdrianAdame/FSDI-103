@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Product Receipts</h1>
+
+    <button class="btn-add" onclick="createEntry()">Add product</button>
+    <section class="products-section" id="receipts">
+        <div class="product-entry" id="product-${productId}">
+            <p>Some random date in some random store</p>
+            <p class="product-number">Order #1</p>
+        
+            <div class="product-table" id="table">
+                <h3>Name</h3>
+                <p>Quantity</p>
+                <p>Price</p>
+            </div>
+            <hr/>
+            <div class="product-total">
+                <i>Subtotal: </i>$ <b id="subtotal">0</b>
+                <br />
+                <u>Total price: </u>$ <b id="total">0</b>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazon variables</title>
+    </head>
+    <body>
+        <h1>Amazon variables</h1>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .user-info {
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                margin-top: 20px;
+                background-color: beige;
+                width:fit-content;
+                padding: 20px;
+                border-radius: 20px;
+            }
+            .user-info p {
+                margin: 5px 0;
+            }
+            .user-info img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        </style>
+        
+        <script>
+            let userName = "Adrian Adame";
+            let userEmail = "adrian.adame@uabc.edu.com";
+            let userPassword = "password123";
+            let userAddress = "Narbol St 123, Chula Vista CA";
+            let userCountry = "USA";
+            let userLanguage = "English";
+            let userPaymentMethod = "Credit Card";
+            let userOrders = ["Order 1", "Order 2", "Order 3"];
+            let userWishList = ["Item 1", "Item 2", "Item 3"];
+            let userCart = ["Item 4", "Item 5"];
+            let userReviews = {"Item 1": "Great product!", "Item 2": "Not bad"};
+            let userProfilePicture = "https://via.placeholder.com/100";
+            let userFriends = ["Edgar Landa", "Irvin Zavala"];
+            let userNotifications = ["New item added", "Friend request"];
+            let userAccountCreationDate = new Date(2020, 1, 1);
+            let userLastLoginDate = new Date();
+            let userIsPrimeMember = true;
+            let userHasFreeShipping = true;
+        
+            document.write(`
+                <div class="user-info">
+                    <img src="${userProfilePicture}" alt="Profile Picture">
+                    <p>Name: ${userName}</p>
+                    <p>Email: ${userEmail}</p>
+                    <p>Password: ${userPassword}</p>
+                    <p>Address: ${userAddress}</p>
+                    <p>Country: ${userCountry}</p>
+                    <p>Language: ${userLanguage}</p>
+                    <p>Payment Method: ${userPaymentMethod}</p>
+                    <p>Orders: ${userOrders.join(", ")}</p>
+                    <p>Wish List: ${userWishList.join(", ")}</p>
+                    <p>Cart: ${userCart.join(", ")}</p>
+                    <p>Reviews: ${JSON.stringify(userReviews)}</p>
+                    <p>Friends: ${userFriends.join(", ")}</p>
+                    <p>Notifications: ${userNotifications.join(", ")}</p>
+                    <p>Account Creation Date: ${userAccountCreationDate.toDateString()}</p>
+                    <p>Last Login Date: ${userLastLoginDate.toDateString()}</p>
+                    <p>Is Prime Member: ${userIsPrimeMember}</p>
+                    <p>Has Free Shipping: ${userHasFreeShipping}</p>
+                </div>
+            `);
+        </script>
+        
+    </body>
+</html>
