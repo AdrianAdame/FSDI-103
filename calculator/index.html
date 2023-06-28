@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my awesome calculator</h1>
+        <h2>Instrucctions: </h2>
+        <ol>
+            <li>Click on the button to start</li>
+            <li>Add the numbers into the prompts.</li>
+            <li>The results of the four operators will be displayed ( + - * /)</li>
+        </ol>
+    </header>
+
+    <main>
+        <div class="inputs">
+            <input class="number-space" type="number" id="number-a">
+            <input class="number-space" type="text" id="operation" placeholder="+,  -,  *,  /">
+            <input class="number-space" type="number" id="number-b">
+        </div>
+        <button onclick="calculate()">Start Calculation!</button>
+
+        <h3>Results</h3>
+        <div id="results" class="results"></div>
+    </main>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
